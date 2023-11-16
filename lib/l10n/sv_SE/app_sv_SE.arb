@@ -72,6 +72,7 @@
   "@barcodeError": {},
   "barcodeInUse": "Streckkoden används redan",
   "@barcodeInUse": {},
+  "@barodeScanPaused": {},
   "build": "Bygg",
   "@build": {},
   "cancel": "Avbryt",
@@ -154,6 +155,7 @@
   "@password": {},
   "reference": "Referens",
   "@reference": {},
+  "@saleOrderCreate": {},
   "save": "Spara",
   "@save": {
     "description": "Save"

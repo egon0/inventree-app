@@ -330,7 +330,14 @@ class InvenTreeAPI {
   // Does the server support extra fields on stock adjustment actions?
   bool get supportsStockAdjustExtraFields => isConnected() && apiVersion >= 133;
 
+  // Does the server support receiving items against a PO using barcodes?
   bool get supportsBarcodePOReceiveEndpoint => isConnected() && apiVersion >= 139;
+
+  // Does the server support adding line items to a PO using barcodes?
+  bool get supportsBarcodePOAddLineEndpoint => isConnected() && apiVersion >= 153;
+
+  // Does the server support allocating stock to sales order using barcodes?
+  bool get supportsBarcodeSOAllocateEndpoint => isConnected() && apiVersion >= 160;
 
   // Cached list of plugins (refreshed when we connect to the server)
   List<InvenTreePlugin> _plugins = [];
@@ -1445,11 +1452,16 @@ class InvenTreeAPI {
       }
     }
 
-    return getImage(
-        imageUrl,
-        width: size,
-        height: size
-    );
+    try {
+      return getImage(
+          imageUrl,
+          width: size,
+          height: size
+      );
+    } catch (error, stackTrace) {
+      sentryReportError("_getThumbnail", error, stackTrace);
+      return null;
+    }
   }
 
   /*

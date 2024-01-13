@@ -1,4 +1,9 @@
-### 0.14.0 - November 2023
+### 0.14.1 - January 2024
+---
+
+- Squashing bugs
+
+### 0.14.0 - December 2023
 ---
 
 - Adds support for Sales Orders
@@ -6,7 +11,10 @@
 - Adds option for "single shot" barcode scanning with camera
 - Fixes bug when removing entire quantity of a stock item
 - Add line items to purchase orders directly from the app
-
+- Add line items to purchase order using barcode scanner
+- Add line items to sales orders directly from the app
+- Add line items to sales order using barcode scanner
+- Allocate stock items against existing sales orders
 
 ### 0.13.0 - October 2023
 ---

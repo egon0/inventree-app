@@ -47,6 +47,12 @@
   "appDetails": "App Details",
   "@appDetails": {},
 
+  "allocated": "Allocated",
+  "@allocated": {},
+
+  "allocateStock": "Allocate Stock",
+  "@allocateStock": {},
+
   "appReleaseNotes": "Display app release notes",
   "@appReleaseNotes": {},
 
@@ -111,6 +117,9 @@
 
   "barcodeNotAssigned": "Barcode not assigned",
   "@barcodeNotAssigned": {},
+
+  "barcodeScanPart": "Scan part barcode",
+  "@barcodeScanPart": {},
 
   "barcodeReceivePart": "Scan barcode to receive part",
   "@barcodeReceivePart": {},
@@ -766,6 +775,9 @@
     "description": "Part (multiple)"
   },
 
+  "partNotSalable": "Part not marked as salable",
+  "@partNotSalable": {},
+
   "partsNone": "No Parts",
   "@partsNone": {},
 
@@ -1057,6 +1069,9 @@
   "@scanBarcode": {
   },
 
+  "scanSupplierPart": "Scan supplier part barcode",
+  "@scanSupplierPart": {},
+
   "scanIntoLocation": "Scan Into Location",
   "@scanIntoLocation": {},
 
@@ -1172,6 +1187,12 @@
 
   "serverNotSelected": "Server not selected",
   "@serverNotSelected": {},
+
+  "shipments": "Shipments",
+  "@shipments": {},
+
+  "shipmentAdd": "Add Shipment",
+  "@shipmentAdd": {},
 
   "shipped": "Shipped",
   "@shipped": {},

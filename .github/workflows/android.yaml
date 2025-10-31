@@ -54,3 +54,8 @@ jobs:
         fvm install
         fvm flutter pub get
         fvm flutter build apk --debug
+    - name: Archive apk
+      uses: actions/upload-artifact@v3
+      with:
+        name: archive-apk-as-artifact
+        path: build/app/outputs/flutter-apk/app-debug.apk
